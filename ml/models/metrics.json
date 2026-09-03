@@ -1,0 +1,40 @@
+{
+  "r2": 0.9755,
+  "mae_watts": 0.9699,
+  "rmse_watts": 1.2189,
+  "mape_percent": 4.12,
+  "best_iteration": 219,
+  "train_samples": 8500,
+  "test_samples": 1500,
+  "hyperparameters": {
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "n_estimators": 250,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0
+  },
+  "feature_importances": {
+    "cpu_temp_interaction": 0.5458999872207642,
+    "cpu_utilization": 0.4086799919605255,
+    "temperature": 0.021940000355243683,
+    "resource_pressure": 0.011920000426471233,
+    "cpu_memory_ratio": 0.004019999876618385,
+    "memory_usage": 0.00215999991632998,
+    "disk_io": 0.0007900000200606883,
+    "thread_count": 0.0007900000200606883,
+    "context_switches": 0.0007800000021234155,
+    "process_thread_ratio": 0.0007600000244565308,
+    "process_count": 0.000750000006519258,
+    "uptime": 0.000750000006519258,
+    "network_latency": 0.000750000006519258
+  },
+  "dataset_metadata": {
+    "source": "C:\\Users\\Joshan\\OneDrive\\Documents\\GreenLedger\\ml\\data\\raw\\sample_it_metrics.csv",
+    "is_synthetic": true,
+    "total_rows": 10000
+  },
+  "training_time_seconds": 2.52,
+  "evaluated_at": "2026-09-03T07:30:09Z"
+}
