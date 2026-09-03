@@ -13,7 +13,7 @@ flowchart TD
         HW["Hardware Sensors (Intel Core Ultra / Arc GPU)"] --> Metrics["agent/windows_metrics.py"]
         Metrics --> Collector["agent/collector.py"]
         Collector --> LocalAPI["agent/api.py (http://127.0.0.1:8765)"]
-        Optimizer["agent/optimizer.py"] --> |Safe powercfg & process tuning| HW
+        Optimizer["agent/optimizer.py"] --> |"Safe powercfg and process tuning"| HW
     end
 
     subgraph "Web Application (Vercel / Next.js)"
@@ -26,7 +26,7 @@ flowchart TD
         Backend["backend/main.py (http://127.0.0.1:8000)"]
         MLService["XGBoost ML Inference Engine"]
         CarbonService["Carbon Calculation Service"]
-        CreditService["Green Credit & Anti-Abuse Engine"]
+        CreditService["Green Credit and Anti-Abuse Engine"]
     end
 
     subgraph "Ethereum Sepolia Testnet"
@@ -34,14 +34,14 @@ flowchart TD
         Explorer["https://sepolia.etherscan.io"]
     end
 
-    LocalAPI <--> |Real-Time HTTP & WebSocket| UI
-    UI <--> |REST API| Backend
+    LocalAPI <--> |"Real-Time HTTP and WebSocket"| UI
+    UI <--> |"REST API"| Backend
     Backend --> MLService
     Backend --> CarbonService
     Backend --> CreditService
-    Web3 <--> |Client-Side Signatures| Contract
+    Web3 <--> |"Client-Side Signatures"| Contract
     Contract --> Explorer
-    UI -.-> |Fallback in Demo Mode| Backend
+    UI -.-> |"Fallback in Demo Mode"| Backend
 ```
 
 ---

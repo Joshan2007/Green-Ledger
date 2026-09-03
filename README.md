@@ -20,7 +20,7 @@ flowchart TD
     subgraph "Local Windows Machine"
         HW["Windows 11 Silicon (Intel Core Ultra / Arc GPU)"] --> Collector["agent/windows_metrics.py"]
         Collector --> LocalDaemon["agent/api.py (http://127.0.0.1:8765)"]
-        Optimizer["agent/optimizer.py"] --> |Safe powercfg & process tuning| HW
+        Optimizer["agent/optimizer.py"] --> |"Safe powercfg and process tuning"| HW
     end
 
     subgraph "Next.js Web Application"
@@ -33,7 +33,7 @@ flowchart TD
         API["FastAPI Backend (http://127.0.0.1:8000)"]
         XGB["XGBoost ML Inference Engine"]
         Carbon["Carbon Accounting Service"]
-        Credits["Green Credit & Anti-Abuse Engine"]
+        Credits["Green Credit and Anti-Abuse Engine"]
     end
 
     subgraph "Ethereum Sepolia Testnet"
@@ -41,14 +41,14 @@ flowchart TD
         Etherscan["Sepolia Block Explorer"]
     end
 
-    LocalDaemon <--> |Real-Time Telemetry & Safe Tuning| Dashboard
-    Dashboard <--> |REST API| API
+    LocalDaemon <--> |"Real-Time Telemetry and Safe Tuning"| Dashboard
+    Dashboard <--> |"REST API"| API
     API --> XGB
     API --> Carbon
     API --> Credits
-    Web3Modal <--> |Client-Side Minting (No Private Keys)| Contract
+    Web3Modal <--> |"Client-Side Minting - No Private Keys"| Contract
     Contract --> Etherscan
-    Dashboard -.-> |Remote Judge Fallback| API
+    Dashboard -.-> |"Remote Judge Fallback"| API
 ```
 
 ---
