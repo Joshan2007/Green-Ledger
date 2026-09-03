@@ -185,15 +185,6 @@ npm run dev
 
 ---
 
-## 5-Minute Hackathon Demo Script for Judges
-
-1. **Open Dashboard** (`http://localhost:3000`): Show the 3D Energy Core and real-time Intel telemetry streaming.
-2. **Explain Model Metrics**: Point out **Estimated Power (Watts)** ($R^2: 0.975$) and localized **Carbon Footprint ($g\ \text{CO}_2\text{e}/\text{hr}$)**.
-3. **Trigger AI Optimization**: Navigate to `/optimize`, review recommended opportunity ("Activate Windows Energy Saver Profile"), and click **"Apply Optimization"**.
-4. **Inspect Before/After Impact**: Watch the animated counter reveal a **~20% reduction** in power and instant avoided carbon savings.
-5. **Collect Green Credits**: Notice **+35 Green Credits** awarded and **⚡ Power Saver** badge unlocked.
-6. **Open Marketplace**: Navigate to `/marketplace`, connect **MetaMask**, switch to **Ethereum Sepolia**, and click **"Mint on Sepolia"** to record permanent decentralized proof on Etherscan!
-
 ---
 
 ## License & Data Privacy
